@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pon Prabhakar K — AI/ML Engineer & Data Scientist</title>
+    <meta name="description"
+        content="Portfolio of Pon Prabhakar K — AI/ML Engineer specializing in Agentic AI, Deep Learning, RAG Systems, and Data Science. Explore featured projects in GenAI, Computer Vision, NLP, and Business Analytics.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>PPK<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="https://github.com/Puzzledcat06" target="_blank" rel="noopener noreferrer" class="nav-github-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Pon Prabhakar K</span>
+            </h1>
+            <div class="hero-typing-wrapper">
+                <span class="hero-subtitle-prefix">I build </span>
+                <span class="hero-typed" id="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                AI/ML Engineer & Data Scientist crafting intelligent systems — from Agentic AI and RAG pipelines to Deep
+                Learning models and real-time analytics dashboards.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17l9.2-9.2M17 17V7.8H7.8" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="18">0</span>
+                    <span class="stat-label">Repositories</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="8">0</span>
+                    <span class="stat-label">Featured Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">AI/ML Domains</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">portfolio.py</span>
+                </div>
+                <pre class="code-body"><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.<span class="code-attr">name</span> = <span class="code-string">"Pon Prabhakar K"</span>
+        self.<span class="code-attr">role</span> = <span class="code-string">"AI/ML Engineer"</span>
+        self.<span class="code-attr">skills</span> = [
+            <span class="code-string">"Agentic AI"</span>,
+            <span class="code-string">"Deep Learning"</span>,
+            <span class="code-string">"RAG Systems"</span>,
+            <span class="code-string">"Data Science"</span>
+        ]
+
+    <span class="code-keyword">def</span> <span class="code-func">build</span>(self):
+        <span class="code-keyword">return</span> <span class="code-string">"🚀 Something amazing"</span></code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm an <strong>AI/ML Engineer & Data Scientist</strong> passionate about building intelligent
+                        systems that solve real-world problems. My work spans across <strong>Generative AI, Agentic
+                            Architectures, Computer Vision, NLP, and Full-Stack Data Science</strong>.
+                    </p>
+                    <p>
+                        I specialize in designing end-to-end ML pipelines — from data ingestion and EDA to model
+                        training, deployment, and interactive dashboards. I love working with <strong>LLMs, RAG systems,
+                            and tool-calling agents</strong> to create explainable, production-ready AI solutions.
+                    </p>
+                    <p>
+                        My projects reflect a strong focus on <strong>industry-relevant problems</strong> — financial AI
+                        copilots, compliance-first BFSI agents, fashion recommendation systems, and more. Every project
+                        follows clean architecture principles with proper documentation.
+                    </p>
+                </div>
+                <div class="about-highlights reveal">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🤖</div>
+                        <h3>Agentic AI</h3>
+                        <p>Building tool-calling agents with LLMs, guardrails, and explainability layers</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🧠</div>
+                        <h3>Deep Learning</h3>
+                        <p>Transfer learning, CNNs, image classification, and similarity engines</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">📊</div>
+                        <h3>Data Science</h3>
+                        <p>End-to-end analytics pipelines with SQL, Python, and interactive dashboards</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🔍</div>
+                        <h3>RAG Systems</h3>
+                        <p>Retrieval-Augmented Generation with vector stores and semantic search</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Tech Stack & Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid reveal">
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">
+                        <span class="skill-cat-icon">🧠</span>
+                        AI / ML
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Transfer Learning</span>
+                        <span class="skill-tag">K-Means</span>
+                        <span class="skill-tag">Random Forest</span>
+                        <span class="skill-tag">XGBoost</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">
+                        <span class="skill-cat-icon">🤖</span>
+                        GenAI / LLM
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LlamaIndex</span>
+                        <span class="skill-tag">Groq</span>
+                        <span class="skill-tag">Ollama</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">Agentic AI</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">
+                        <span class="skill-cat-icon">🐍</span>
+                        Languages & Data
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQLAlchemy</span>
+                        <span class="skill-tag">Regex</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">
+                        <span class="skill-cat-icon">📊</span>
+                        Visualization
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Plotly</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title">
+                        <span class="skill-cat-icon">🛠️</span>
+                        Tools & DevOps
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Streamlit Cloud</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Curated selection of my best work across AI, ML, and Data Science</p>
+            </div>
+
+            <!-- Project Filter Tabs -->
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai-agents">AI Agents</button>
+                <button class="filter-btn" data-filter="ml-dl">ML / DL</button>
+                <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: FinPilot-AI -->
+                <article class="project-card reveal" data-category="ai-agents">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrapper ai-agents-gradient">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Puzzledcat06/FinPilot-AI" target="_blank"
+                                rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">FinPilot-AI</h3>
+                    <p class="project-tagline">Agentic GenAI Finance Copilot</p>
+                    <p class="project-description">
+                        AI-powered financial planner with tool-calling agentic architecture. Features EMI simulation,
+                        budget-aware affordability, stress testing, and explainable AI — LLM explains, never computes.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Groq LLM</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Agentic AI</span>
+                        <span class="tech-tag">XAI</span>
+                    </div>
+                    <div class="project-badge">
+                        <span class="badge-label hot">🔥 Trending</span>
+                    </div>
+                </article>
+
+                <!-- Project 2: Fashion-Product-Intelligence -->
+                <article class="project-card reveal" data-category="ml-dl">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrapper ml-dl-gradient">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Puzzledcat06/Fashion-Product-Intelligence" target="_blank"
+                                rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Fashion Product Intelligence</h3>
+                    <p class="project-tagline">Deep Learning Recommendation System</p>
+                    <p class="project-description">
+                        CNN-based fashion image classifier with similarity recommendation engine. Uses transfer learning
+                        for feature extraction and cosine similarity for product recommendations.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">Transfer Learning</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-badge">
+                        <span class="badge-label new">✨ Latest</span>
+                    </div>
+                </article>
+
+                <!-- Project 3: Github-Rag-Chat -->
+                <article class="project-card reveal" data-category="ai-agents">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrapper ai-agents-gradient">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Puzzledcat06/Github-Rag-Chat" target="_blank"
+                                rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">GitHub RAG Chatbot</h3>
+                    <p class="project-tagline">RAG-Powered Code Q&A System</p>
+                    <p class="project-description">
+                        Chat with any GitHub repo using Retrieval-Augmented Generation. Ingests repos, builds semantic
+                        index with LlamaIndex, and answers questions via local LLM — no cloud API needed.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">LlamaIndex</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Ollama</span>
+                        <span class="tech-tag">HuggingFace</span>
+                    </div>
+                </article>
+
+                <!-- Project 4: BFSI Agent -->
+                <article class="project-card reveal" data-category="ai-agents">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrapper ai-agents-gradient">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Puzzledcat06/BFSI_Agent" target="_blank"
+                                rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">BFSI Call Center Agent</h3>
+                    <p class="project-tagline">Compliance-First AI Assistant</p>
+                    <p class="project-description">
+                        Enterprise-grade BFSI AI assistant with 3-tier response pipeline. Uses curated dataset matching,
+                        local SLM, and RAG over policy docs — with strict guardrails preventing financial hallucination.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">FAISS</span>
+                        <span class="tech-tag">Ollama</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Guardrails</span>
+                    </div>
+                </article>
+
+                <!-- Project 5: Skill Gap Analyzer -->
+                <article class="project-card reveal" data-category="ai-agents">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrapper ai-agents-gradient">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c6 3 10 0 12-1v-4" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://skill-gap-analyzer-mine.streamlit.app/" target="_blank"
+                                rel="noopener noreferrer" class="project-link live-link" title="Live Demo">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/Puzzledcat06/Skill-Gap-Analyzer" target="_blank"
+                                rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">AI Skill Gap Analyzer</h3>
+                    <p class="project-tagline">Adaptive Assessment Engine</p>
+                    <p class="project-description">
+                        Interactive AI that evaluates learner skills against target roles using scenario-based
+                        questions. Dynamic skill mapping, priority learning areas, and personalized roadmaps — deployed
+                        live.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Groq</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Hybrid AI</span>
+                        <span class="tech-tag">Deployed</span>
+                    </div>
+                    <div class="project-badge">
+                        <span class="badge-label live">🟢 Live</span>
+                    </div>
+                </article>
+
+                <!-- Project 6: News Popularity Intelligence -->
+                <article class="project-card reveal" data-category="ml-dl">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrapper ml-dl-gradient">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
+                                <path d="M18 14h-8" />
+                                <path d="M15 18h-5" />
+                                <path d="M10 6h8v4h-8z" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Puzzledcat06/news-popularity" target="_blank"
+                                rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">News Popularity Intelligence</h3>
+                    <p class="project-tagline">Transformer-Based NLP Ranking System</p>
+                    <p class="project-description">
+                        Predicts news article popularity under cold-start conditions using DistilBERT embeddings and
+                        weak supervision. Combines urgency, sentiment, and readability signals with explainable rankings
+                        for editorial decision support.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">DistilBERT</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">HuggingFace</span>
+                    </div>
+                    <div class="project-badge">
+                        <span class="badge-label hot">🧠 NLP</span>
+                    </div>
+                </article>
+
+                <!-- Project 7: Global Seismic Trends -->
+                <article class="project-card reveal" data-category="data-analytics">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrapper data-analytics-gradient">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M2 12h20" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Puzzledcat06/global-seismic-trends" target="_blank"
+                                rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Global Seismic Trends</h3>
+                    <p class="project-tagline">Earthquake Data Analytics Pipeline</p>
+                    <p class="project-description">
+                        Full-stack analytics project: USGS API data collection → Python cleaning with regex → MySQL
+                        storage → 30 analytical SQL queries → Interactive Streamlit dashboard with Plotly.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Plotly</span>
+                    </div>
+                </article>
+
+                <!-- Project 8: Online Food Delivery Analysis -->
+                <article class="project-card reveal" data-category="data-analytics">
+                    <div class="project-card-header">
+                        <div class="project-icon-wrapper data-analytics-gradient">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                                <line x1="6" y1="1" x2="6" y2="4" />
+                                <line x1="10" y1="1" x2="10" y2="4" />
+                                <line x1="14" y1="1" x2="14" y2="4" />
+                            </svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Puzzledcat06/online-food-delivery-analysis" target="_blank"
+                                rel="noopener noreferrer" class="project-link" title="View on GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Food Delivery Analytics</h3>
+                    <p class="project-tagline">End-to-End Business Intelligence</p>
+                    <p class="project-description">
+                        Comprehensive analytics on food delivery data — data cleaning, feature engineering, SQL
+                        analysis, and a SQL-driven Streamlit dashboard covering KPIs, demand patterns, and delivery
+                        performance.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">Seaborn</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="projects-cta reveal">
+                <a href="https://github.com/Puzzledcat06?tab=repositories" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-secondary">
+                    View All Repositories
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section class="section github-stats">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;github&gt;</span>
+                <h2 class="section-title">GitHub Activity</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="stats-grid reveal">
+                <div class="github-stat-card">
+                    <div class="github-stat-icon">📦</div>
+                    <div class="github-stat-number" data-count="18">0</div>
+                    <div class="github-stat-label">Public Repos</div>
+                </div>
+                <div class="github-stat-card">
+                    <div class="github-stat-icon">🐍</div>
+                    <div class="github-stat-number">Python</div>
+                    <div class="github-stat-label">Primary Language</div>
+                </div>
+                <div class="github-stat-card">
+                    <div class="github-stat-icon">🤖</div>
+                    <div class="github-stat-number">5</div>
+                    <div class="github-stat-label">AI Agent Projects</div>
+                </div>
+                <div class="github-stat-card">
+                    <div class="github-stat-icon">📊</div>
+                    <div class="github-stat-number">3</div>
+                    <div class="github-stat-label">Analytics Dashboards</div>
+                </div>
+            </div>
+            <div class="github-profile-link reveal">
+                <a href="https://github.com/Puzzledcat06" target="_blank" rel="noopener noreferrer"
+                    class="github-link-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    <span>@Puzzledcat06</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content reveal">
+                <p class="contact-text">
+                    I'm always open to discussing new projects, AI innovations, and exciting collaboration
+                    opportunities. Feel free to reach out!
+                </p>
+                <div class="contact-links">
+                    <a href="https://github.com/Puzzledcat06" target="_blank" rel="noopener noreferrer"
+                        class="contact-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-handle">@Puzzledcat06</span>
+                    </a>
+                    <a href="mailto:ponprabhakar@example.com" class="contact-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-handle">Let's Talk</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Designed & Built by <span class="gradient-text">Pon Prabhakar K</span>
+                </p>
+                <p class="footer-sub">© 2026 — Crafted with passion for AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
